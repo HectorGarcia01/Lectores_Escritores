@@ -1,0 +1,129 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+:root{
+    --backgroung: linear-gradient(135deg, #F07900 0%, #0CF0B398 100%);
+}
+
+.fondoimg{
+    width: 100%;
+    height: 100vh;
+    background-image: var(--backgroung), url('/Recursos/fondo_perfil.jpg');
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    color: white;
+    justify-content: center;
+    text-align: center;
+}
+
+.perfil{
+    width: 400px;
+    background-color: rgba(0, 0, 0,0.6);
+    padding: 30px 0;
+    border-radius: 10%;
+    margin-right: 30px;
+}
+
+img{
+    width: 90%;
+    border-radius: 60px;
+}
+
+.perfil_texto h3{
+    font-family: 'Raleway', sans-serif; 
+    font-size: 1.4em;
+    font-weight: lighter;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.button {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    padding: 12px 28px;
+    border: 1px solid #d11e1e;
+    border-radius: 21px;
+    background: #ff4a4a;
+    background: -webkit-gradient(linear, left top, left bottom, from(#ff4a4a), to(#cf0029));
+    background: -moz-linear-gradient(top, #ff4a4a, #cf0029);
+    background: linear-gradient(to bottom, #ff4a4a, #cf0029);
+    text-shadow: #591717 1px 3px 1px;
+    font: normal normal bold 19px arial;
+    color: #ffffff;
+    text-decoration: none;
+    margin-bottom: 30px;
+}
+.button:hover,
+.button:focus {
+    border: 1px solid #ff3030;
+    background: #ff5959;
+    background: -webkit-gradient(linear, left top, left bottom, from(#ff5959), to(#f80031));
+    background: -moz-linear-gradient(top, #ff5959, #f80031);
+    background: linear-gradient(to bottom, #ff5959, #f80031);
+    color: #ffffff;
+    text-decoration: none;
+}
+.button:active {
+    background: #982727;
+    background: -webkit-gradient(linear, left top, left bottom, from(#982727), to(#cf0029));
+    background: -moz-linear-gradient(top, #982727, #cf0029);
+    background: linear-gradient(to bottom, #982727, #cf0029);
+}
+
+.botones{
+    display: flex;
+    flex-direction:column;
+    background-color: rgba(0, 0, 0,0.6);
+    padding: 30px 30px;
+    border-radius: 10%;
+    padding-bottom: 30px;
+
+}
+
+.separador{
+    display: flex;
+}
+
+/*Para la ventana nodal*/
+#ventana_nodal{
+    position: absolute;
+    right:10px;
+    display: block;
+    width: 300px;
+    height: 150px;
+    background: #464a2a;
+    border-radius: 20px;
+}
+
+.ventana_botones{
+    position: relative;
+    top: 19px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ventana_botones input{
+    width: 200px;
+    height: 30px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.triangulo {
+    width: 0; 
+    height: 0; 
+    border-left: 100px solid #f0ad4e;
+    border-top: 50px solid transparent;
+    border-bottom: 50px solid transparent; 
+}
+
+footer{
+    position: absolute;
+    bottom: 20px;
+    font-weight: bolder;
+}

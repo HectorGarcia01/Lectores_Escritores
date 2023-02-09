@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+      <title>REGISTRO DE ACTIVIDADES</title>
+      <link rel="stylesheet" href="css/Registro1.css">
+  </head>
+  <body>
+    <header>
+        <div class="modal-wrap">
+            <div class="modal-header"><span class="is-active"></span><span></span></div>
+            <div class="modal-bodies">
+              <div class="modal-body modal-body-step-1 is-showing">
+                <div class="title">Registro de Toreros</div>
+                <div class="description">Hola registra aca lo solicitado</div>
+                
+                <form action="php/ControladorRegistroTorero.php" method="post">
+                  <input type="text" name="DNI_Torero" placeholder="DNI TORERO *" /> 
+                  <input type="text" name="Nombre_Torero" placeholder="NOMBRE "/>
+                  <input type="text" name="Apellido_Torero" placeholder="APELLIDO"/>
+                  <input type="text" name="Apodo_Torero" placeholder="APODO"/>
+                  <input type="number" name="Edad_Torero" placeholder="EDAD"/>
+                  <input type="text" name="Sexo_Torero" placeholder="SEXO"/>
+                  <input type="text" name="Direccion_Torero" placeholder="DIRECCION"/>
+                  <input type="date" name="FechaA_Torero" placeholder="FECHA ALTERNATIVA"/>
+                  <input type="text" name="PuertaG_Torero" placeholder="PUERTA GRANDE: SI/NO"/>
+
+                  </br>
+                  <hr></hr>
+                  </br></br>
+
+                  <div class="description">Registra los regalos</div>
+                  <input type="text" name="ID_Regalo" placeholder="ID REGALO *" />
+                  <input type="number" name="NOreja_Regalo" placeholder="NO. OREJAS"/>
+                  <input type="number" name="NRabo_Regalo" placeholder="NO. RABOS"/>
+
+                  </br>
+                  <hr></hr>
+                  </br></br>
+
+                  <div class="description">Registra los datos de la corrida</div>
+                  <input type="text" name="NOrden_Corrida" placeholder="NO. DEL ORDEN DE LA CORRIDA *"/>
+                  <input type="number" name="Cantidad_Toreros" placeholder="CANTIDAD DE TOREROS" disabled/>
+                  </br>
+                  <div class="text-right">
+                    <div class="BotonesGuardar">
+                      <a class="button" href="Perfil.html">TERMINAR</a>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="text-center">
+            <div class="rerun-button">ReRun</div>
+          </div> 
+    </header> 
+  </body>
+</html>
